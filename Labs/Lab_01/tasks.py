@@ -15,138 +15,138 @@ Topics:
 
 from typing import List, Dict, Tuple, Set, Any
 
-# # ============================================================
-# # Task 1 — Personal Information
-# # ============================================================
+# ============================================================
+# Task 1 — Personal Information
+# ============================================================
 
-# print("Task 1 — Personal Information")
+print("Task 1 — Personal Information")
 
-# # TODO:
-# # Ask the user to enter their name.
-# name: str = input("Enter your name: ")
+# TODO:
+# Ask the user to enter their name.
+name: str = input("Enter your name: ")
 
-# # TODO:
-# # Ask the user to enter their age.
-# # Remember that input() returns a string.
-# age: int = int(input("Enter your age: "))
+# TODO:
+# Ask the user to enter their age.
+# Remember that input() returns a string.
+age: int = int(input("Enter your age: "))
 
-# # TODO:
-# # Print:
-# # Hello, <name>!
-# # Next year you will be <age + 1> years old.
-# print(f"Hello, {name}")
-# print(f"Next year you will be {age + 1} years old.")
+# TODO:
+# Print:
+# Hello, <name>!
+# Next year you will be <age + 1> years old.
+print(f"Hello, {name}")
+print(f"Next year you will be {age + 1} years old.")
 
-# print()
+print()
 
-# # ============================================================
-# # Task 2 — Rectangle
-# # ============================================================
+# ============================================================
+# Task 2 — Rectangle
+# ============================================================
 
-# print("Task 2 — Rectangle")
+print("Task 2 — Rectangle")
 
-# # TODO:
-# # Ask the user to enter width and height.
-# width: float = float(input("Enter the width of the rectangle: "))
-# height: float = float(input("Enter the height of the rectangle: "))
+# TODO:
+# Ask the user to enter width and height.
+width: float = float(input("Enter the width of the rectangle: "))
+height: float = float(input("Enter the height of the rectangle: "))
 
-# # TODO:
-# # Calculate the area.
-# area: float = width * height
+# TODO:
+# Calculate the area.
+area: float = width * height
 
-# # TODO:
-# # Calculate the perimeter.
-# perimeter: float = 2 *  width + 2 * height
+# TODO:
+# Calculate the perimeter.
+perimeter: float = 2 *  width + 2 * height
 
-# # TODO:
-# # Print the results.
-# print(f"Area: {area}")
-# print(f"Perimeter: {perimeter}")
+# TODO:
+# Print the results.
+print(f"Area: {area}")
+print(f"Perimeter: {perimeter}")
 
-# print()
-
-
-# # ============================================================
-# # Task 3 — Temperature Converter
-# # ============================================================
-
-# print("Task 3 — Temperature Converter")
-
-# # Formula:
-# # Fahrenheit = Celsius * 9 / 5 + 32
-
-# # TODO:
-# # Read Celsius temperature.
-# celsius: float = float(input("Enter temperature in Celsius: "))
-
-# # TODO:
-# # Calculate Fahrenheit temperature.
-# fahrenheit: float = (9.0 * celsius) / 5.0 + 32.0
-
-# # TODO:
-# # Print the result.
-# print(f"{celsius}°C is equal to {fahrenheit}°F")
-
-# print()
+print()
 
 
-# # ============================================================
-# # Task 4 — Purchase Calculator
-# # ============================================================
+# ============================================================
+# Task 3 — Temperature Converter
+# ============================================================
 
-# print("Task 4 — Purchase Calculator")
+print("Task 3 — Temperature Converter")
 
-# # TODO:
-# # Ask for the number of items.
-# quantity: int = int(input("Enter the number of items: "))
+# Formula:
+# Fahrenheit = Celsius * 9 / 5 + 32
 
-# # TODO:
-# # Ask for the price of one item.
-# price: float = float(input("Enter the price of one item: "))
+# TODO:
+# Read Celsius temperature.
+celsius: float = float(input("Enter temperature in Celsius: "))
 
-# # TODO:
-# # Calculate the total price.
-# total_price: float = quantity * price
+# TODO:
+# Calculate Fahrenheit temperature.
+fahrenheit: float = (9.0 * celsius) / 5.0 + 32.0
 
-# # TODO:
-# # Apply a 10% discount.
-# discounted_price: float = total_price * 0.90
+# TODO:
+# Print the result.
+print(f"{celsius}°C is equal to {fahrenheit}°F")
 
-# # TODO:
-# # Print both results.
-# print(f"Total price: {total_price}")
-# print(f"Discounted price (10% off): {discounted_price:.3f}")
-
-# print()
+print()
 
 
-# # ============================================================
-# # Task 5 — Arithmetic Operators
-# # ============================================================
+# ============================================================
+# Task 4 — Purchase Calculator
+# ============================================================
 
-# print("Task 5 — Arithmetic Operators")
+print("Task 4 — Purchase Calculator")
 
-# a: int = 17
-# b: int = 5
+# TODO:
+# Ask for the number of items.
+quantity: int = int(input("Enter the number of items: "))
 
-# # TODO:
-# # Print the result of each operation:
-# #
-# # a + b
-# # a - b
-# # a * b
-# # a / b
-# # a // b
-# # a % b
-# # a ** b
+# TODO:
+# Ask for the price of one item.
+price: float = float(input("Enter the price of one item: "))
 
-# print(f"a + b  = {a + b}")   # Addition
-# print(f"a - b  = {a - b}")   # Subtraction
-# print(f"a * b  = {a * b}")   # Multiplication
-# print(f"a / b  = {a / b}")   # True division (float)
-# print(f"a // b = {a // b}")  # Floor division (integer)
-# print(f"a % b  = {a % b}")   # Modulo (remainder)
-# print(f"a ** b = {a ** b}")  # Exponentiation
+# TODO:
+# Calculate the total price.
+total_price: float = quantity * price
+
+# TODO:
+# Apply a 10% discount.
+discounted_price: float = total_price * 0.90
+
+# TODO:
+# Print both results.
+print(f"Total price: {total_price}")
+print(f"Discounted price (10% off): {discounted_price:.3f}")
+
+print()
+
+
+# ============================================================
+# Task 5 — Arithmetic Operators
+# ============================================================
+
+print("Task 5 — Arithmetic Operators")
+
+a: int = 17
+b: int = 5
+
+# TODO:
+# Print the result of each operation:
+#
+# a + b
+# a - b
+# a * b
+# a / b
+# a // b
+# a % b
+# a ** b
+
+print(f"a + b  = {a + b}")   # Addition
+print(f"a - b  = {a - b}")   # Subtraction
+print(f"a * b  = {a * b}")   # Multiplication
+print(f"a / b  = {a / b}")   # True division (float)
+print(f"a // b = {a // b}")  # Floor division (integer)
+print(f"a % b  = {a % b}")   # Modulo (remainder)
+print(f"a ** b = {a ** b}")  # Exponentiation
 
 # ============================================================
 # Task 6 — Data Types
@@ -358,6 +358,8 @@ radius: float = float(input("Enter the radius of a circle: "))
 # area = 3.14159 * radius ** 2
 
 area: float = math.pi * radius ** 2
+
+# The second variant is just area: float = 3.14159 * radius ** 2
 
 # TODO:
 # Print the radius and area using an f-string.
