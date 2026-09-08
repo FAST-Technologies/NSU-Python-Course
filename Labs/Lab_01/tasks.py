@@ -21,13 +21,11 @@ print("Task 1 — Personal Information")
 
 # TODO:
 # Ask the user to enter their name.
-
 name: str = input("Enter your name: ")
 
 # TODO:
 # Ask the user to enter their age.
 # Remember that input() returns a string.
-
 age: int = int(input("Enter your age: "))
 
 # TODO:
@@ -37,9 +35,7 @@ age: int = int(input("Enter your age: "))
 print(f"Hello, {name}")
 print(f"Next year you will be {age + 1} years old.")
 
-
 print()
-
 
 # ============================================================
 # Task 2 — Rectangle
@@ -47,13 +43,21 @@ print()
 
 print("Task 2 — Rectangle")
 
+# TODO:
+# Ask the user to enter width and height.
 width: float = float(input("Enter the width of the rectangle: "))
 height: float = float(input("Enter the height of the rectangle: "))
 
+# TODO:
+# Calculate the area.
 area: float = width * height
 
+# TODO:
+# Calculate the perimeter.
 perimeter: float = 2 *  width + 2 * height
 
+# TODO:
+# Print the results.
 print(f"Area: {area}")
 print(f"Perimeter: {perimeter}")
 
@@ -69,10 +73,16 @@ print("Task 3 — Temperature Converter")
 # Formula:
 # Fahrenheit = Celsius * 9 / 5 + 32
 
+# TODO:
+# Read Celsius temperature.
 celsius: float = float(input("Enter temperature in Celsius: "))
 
+# TODO:
+# Calculate Fahrenheit temperature.
 fahrenheit: float = (9.0 * celsius) / 5.0 + 32.0
 
+# TODO:
+# Print the result.
 print(f"{celsius}°C is equal to {fahrenheit}°F")
 
 print()
@@ -84,24 +94,26 @@ print()
 
 print("Task 4 — Purchase Calculator")
 
+# TODO:
+# Ask for the number of items.
 quantity: int = int(input("Enter the number of items: "))
 
+# TODO:
+# Ask for the price of one item.
 price: float = float(input("Enter the price of one item: "))
 
 # TODO:
 # Calculate the total price.
-
 total_price: float = quantity * price
 
 # TODO:
 # Apply a 10% discount.
-
 discounted_price: float = total_price * 0.90
 
 # TODO:
 # Print both results.
 print(f"Total price: {total_price}")
-print(f"Discounted price (10% off): {discounted_price}")
+print(f"Discounted price (10% off): {discounted_price:.3f}")
 
 print()
 
