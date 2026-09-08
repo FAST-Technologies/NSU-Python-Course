@@ -13,7 +13,6 @@ Topics:
 - basic PEP 8
 """
 
-
 # ============================================================
 # Task 1 — Personal Information
 # ============================================================
@@ -23,18 +22,20 @@ print("Task 1 — Personal Information")
 # TODO:
 # Ask the user to enter their name.
 
-name = input("Enter your name: ")
+name: str = input("Enter your name: ")
 
 # TODO:
 # Ask the user to enter their age.
 # Remember that input() returns a string.
 
-age = 0
+age: int = int(input("Enter your age: "))
 
 # TODO:
 # Print:
 # Hello, <name>!
 # Next year you will be <age + 1> years old.
+print(f"Hello, {name}")
+print(f"Next year you will be {age + 1} years old.")
 
 
 print()
@@ -46,25 +47,15 @@ print()
 
 print("Task 2 — Rectangle")
 
-# TODO:
-# Ask the user to enter width and height.
+width: float = float(input("Enter the width of the rectangle: "))
+height: float = float(input("Enter the height of the rectangle: "))
 
-width = 0.0
-height = 0.0
+area: float = width * height
 
-# TODO:
-# Calculate the area.
+perimeter: float = 2 *  width + 2 * height
 
-area = 0.0
-
-# TODO:
-# Calculate the perimeter.
-
-perimeter = 0.0
-
-# TODO:
-# Print the results.
-
+print(f"Area: {area}")
+print(f"Perimeter: {perimeter}")
 
 print()
 
@@ -78,19 +69,11 @@ print("Task 3 — Temperature Converter")
 # Formula:
 # Fahrenheit = Celsius * 9 / 5 + 32
 
-# TODO:
-# Read Celsius temperature.
+celsius: float = float(input("Enter temperature in Celsius: "))
 
-celsius = 0.0
+fahrenheit: float = (9.0 * celsius) / 5.0 + 32.0
 
-# TODO:
-# Calculate Fahrenheit temperature.
-
-fahrenheit = 0.0
-
-# TODO:
-# Print the result.
-
+print(f"{celsius}°C is equal to {fahrenheit}°F")
 
 print()
 
@@ -101,29 +84,24 @@ print()
 
 print("Task 4 — Purchase Calculator")
 
-# TODO:
-# Ask for the number of items.
+quantity: int = int(input("Enter the number of items: "))
 
-quantity = 0
-
-# TODO:
-# Ask for the price of one item.
-
-price = 0.0
+price: float = float(input("Enter the price of one item: "))
 
 # TODO:
 # Calculate the total price.
 
-total_price = 0.0
+total_price: float = quantity * price
 
 # TODO:
 # Apply a 10% discount.
 
-discounted_price = 0.0
+discounted_price: float = total_price * 0.90
 
 # TODO:
 # Print both results.
-
+print(f"Total price: {total_price}")
+print(f"Discounted price (10% off): {discounted_price}")
 
 print()
 
@@ -134,8 +112,8 @@ print()
 
 print("Task 5 — Arithmetic Operators")
 
-a = 17
-b = 5
+a: int = 17
+b: int = 5
 
 # TODO:
 # Print the result of each operation:
@@ -147,3 +125,11 @@ b = 5
 # a // b
 # a % b
 # a ** b
+
+print(f"a + b  = {a + b}")   # Addition
+print(f"a - b  = {a - b}")   # Subtraction
+print(f"a * b  = {a * b}")   # Multiplication
+print(f"a / b  = {a / b}")   # True division (float)
+print(f"a // b = {a // b}")  # Floor division (integer)
+print(f"a % b  = {a % b}")   # Modulo (remainder)
+print(f"a ** b = {a ** b}")  # Exponentiation
