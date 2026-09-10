@@ -23,3 +23,15 @@ print(name, age, sep=" | ")
 
 print("Python", end=" ")
 print("Programming")
+
+text = "  Python Programming Course  "
+
+clean_text = text.strip()
+
+print(clean_text)
+print(clean_text.lower())
+print(clean_text.upper())
+print(clean_text.replace("Course", "Lab"))
+
+print(clean_text.startswith("Python"))
+print(clean_text.endswith("Course"))
