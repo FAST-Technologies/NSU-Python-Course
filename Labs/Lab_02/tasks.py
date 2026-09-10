@@ -344,334 +344,334 @@ print(f"Number of skills: {len(student['skills'])}")
 print()
 
 
-# # ============================================================
-# # Task 10 — Mutable and Immutable Objects
-# # ============================================================
-
-# print("Task 10 — Mutable and Immutable Objects")
-
-# # List example — mutable
-
-# numbers: List[int] = [10, 20, 30]
-# same_numbers: List[int] = numbers
-
-# # TODO:
-# # Change the first item in numbers to 99.
-# #
-# # Then print both:
-# #
-# # numbers
-# # same_numbers
-# #
-# # Observe what happened.
-# numbers[0] = 99
-
-# print(f"numbers: {numbers}")
-# print(f"same_numbers: {same_numbers}")
-# # Observation: Both variables show [99, 20, 30] because lists are mutable and both variables reference the same object in memory.
-
-# # String example — immutable
-
-# text: str = "Python"
-# same_text: str = text
-
-# # TODO:
-# # Create a new string by adding " Course" to text.
-# #
-# # Then print:
-# #
-# # text
-# # same_text
-# #
-# # Compare this result with the list example.
-# text: str = text + " Course"
-
-# print(f"text: {text}")
-# print(f"same_text: {same_text}")
-# # Observation: 'text' is now "Python Course", but 'same_text' remains "Python". Strings are immutable, so concatenation creates a new object.
-
-# print()
-
-
-# # ============================================================
-# # Task 11 — Small Statistics Report
-# # ============================================================
-
-# print("Task 11 — Small Statistics Report")
-
-# scores: List[int] = [78, 92, 85, 69, 88]
-
-# # TODO:
-# # Calculate:
-# #
-# # number of scores
-# # minimum score
-# # maximum score
-# # total score
-# # mean score
-# #
-# # Use built-in functions.
-
-# score_count: int = len(scores)
-# minimum_score: int = min(scores)
-# maximum_score: int = max(scores)
-# total_score: int = sum(scores)
-# mean_score: float = sum(scores) / len(scores)
-
-# # TODO:
-# # Print a clean report:
-# #
-# # Number of scores: 5
-# # Minimum: 69
-# # Maximum: 92
-# # Mean: 82.40
-# #
-# # Format the mean to exactly two decimal places.
-# print(f"Number of scores: {score_count}")
-# print(f"Minimum: {minimum_score}")
-# print(f"Maximum: {maximum_score}")
-# print(f"Mean: {mean_score:.2f}")
-
-# print()
-
-
-# # ============================================================
-# # Task 12 — PEP 8 Cleanup
-# # ============================================================
-
-# print("Task 12 — PEP 8 Cleanup")
-
-# # The following code works, but it is difficult to read.
-# #
-# # TODO:
-# # Rewrite it using:
-# #
-# # meaningful variable names
-# # snake_case
-# # spaces around operators
-# # intermediate variables
-# # formatted output
-# #
-# # Keep the same calculation.
-
-# price: int = 1250
-# quantity: int = 3
-# discount_percent: int = 10
-
-# total_cost: int = price * quantity
-# final_amount: float = total_cost - (discount_percent / 100) * total_cost
-
-# print(f"Final: {final_amount}")
-
-
-# print()
-
-
-# # ============================================================
-# # Optional Challenge — Student Score Summary
-# # ============================================================
-
-# print("Optional Challenge — Student Score Summary")
-
-# # Create a small program using only concepts from Sections 1–2.
-# #
-# # Ask the user for:
-# #
-# # student name
-# # three test scores
-# #
-# # Store the three scores in a list.
-# #
-# # Calculate:
-# #
-# # minimum score
-# # maximum score
-# # mean score
-# #
-# # Print a clean summary similar to:
-# #
-# # Student: Anna
-# # Scores: [78.0, 85.0, 91.0]
-# # Minimum: 78.00
-# # Maximum: 91.00
-# # Mean: 84.67
-# #
-# # Use:
-# # input()
-# # float()
-# # list
-# # min()
-# # max()
-# # sum()
-# # len()
-# # f-strings
-
-# student_name_input: str = input("Enter student name: ")
-# score1: float = float(input("Enter first test score: "))
-# score2: float = float(input("Enter second test score: "))
-# score3: float = float(input("Enter third test score: "))
-
-# scores_list: List[float] = [score1, score2, score3]
-
-# min_score: float = min(scores_list)
-# max_score: float = max(scores_list)
-# mean_score_challenge: float = sum(scores_list) / len(scores_list)
-
-# print(f"Student: {student_name_input}")
-# print(f"Scores: {scores_list}")
-# print(f"Minimum: {min_score:.2f}")
-# print(f"Maximum: {max_score:.2f}")
-# print(f"Mean: {mean_score_challenge:.2f}")
-
-
-# # ============================================================
-# # Task 13 — Multiple Assignment
-# # ============================================================
-
-# print("Task 13 — Multiple Assignment")
-
-# # TODO:
-# # Assign these three values using ONE statement:
-# #
-# # x = 10
-# # y = 20
-# # z = 30
-
-# x: int
-# y: int
-# z: int
-# x, y, z = 10, 20, 30
-
-# # TODO:
-# # Print x, y, and z.
-# print(f"x: {x}, y: {y}, z: {z}")
-
-# # TODO:
-# # Swap a and b using one Python statement.
-
-# a: int
-# b: int
-# a, b = 5, 10
-# a, b = b, a  # Swapping in one statement
-
-# # Expected after swapping:
-# # a = 10
-# # b = 5
-# print(f"After swapping -> a: {a}, b: {b}")
-
-# print()
-
-
-
-# # ============================================================
-# # Task 14 — String Methods
-# # ============================================================
-
-# print("Task 14 — String Methods")
-
-# text: str = "  Python Programming Course  "
-
-# # TODO:
-# # Print the text:
-# #
-# # 1. without surrounding spaces
-# # 2. in lowercase
-# # 3. in uppercase
-# # 4. with "Course" replaced by "Lab"
-# print(f"1. Without surrounding spaces: '{text.strip()}'")
-# print(f"2. Lowercase: {text.lower()}")
-# print(f"3. Uppercase: {text.upper()}")
-# print(f"4. Replaced: {text.replace('Course', 'Lab')}")
-
-# # TODO:
-# # Check and print whether the cleaned text:
-# #
-# # starts with "Python"
-# # ends with "Course"
-# #
-# # Use:
-# # strip()
-# # lower()
-# # upper()
-# # replace()
-# # startswith()
-# # endswith()
-# cleaned_text: str = text.strip()
-# print(f"Starts with 'Python': {cleaned_text.startswith('Python')}")
-# print(f"Ends with 'Course': {cleaned_text.endswith('Course')}")
-
-# print()
-
-# # ============================================================
-# # Task 15 — Boolean Expressions
-# # ============================================================
-
-# print("Task 15 — Boolean Expressions")
-
-# age: int = 22
-# score: int = 85
-# is_master_student: bool = True
-
-# # TODO:
-# # Print the result of:
-
-# # age >= 18
-# # score >= 60
-# # score >= 60 and is_master_student
-# # score < 60 or age < 18
-# # not is_master_student
-# print(f"age >= 18: {age >= 18}")
-# print(f"score >= 60: {score >= 60}")
-# print(f"score >= 60 and is_master_student: {score >= 60 and is_master_student}")
-# print(f"score < 60 or age < 18: {score < 60 or age < 18}")
-# print(f"not is_master_student: {not is_master_student}")
-
-# # TODO:
-# # Predict and then print:
-
-# # bool(0)
-# # bool(1)
-# # bool("")
-# # bool("Python")
-# # bool([])
-# # bool([1, 2])
-# print(f"bool(0): {bool(0)}")
-# print(f"bool(1): {bool(1)}")
-# print(f'bool(""): {bool("")}')
-# print(f'bool("Python"): {bool("Python")}')
-# print(f"bool([]): {bool([])}")
-# print(f"bool([1, 2]): {bool([1, 2])}")
-
-
-# print()
-
-# # ============================================================
-# # Task 16 — Membership
-# # ============================================================
-
-# print("Task 16 — Membership")
-
-# numbers: List[int] = [10, 20, 30]
-# text: str = "Python Programming"
-# student: Dict[str, Any] = {
-#     "name": "Anna",
-#     "age": 22,
-# }
-
-# # TODO:
-# # Print the result of:
-
-# # 20 in numbers
-# # 50 not in numbers
-# # "Python" in text
-# # "Java" not in text
-# # "age" in student
-# # "email" in student
-# print(f"20 in numbers: {20 in numbers}")
-# print(f"50 not in numbers: {50 not in numbers}")
-# print(f"'Python' in text: {'Python' in text}")
-# print(f"'Java' not in text: {'Java' not in text}")
-# print(f"'age' in student: {'age' in student}")
-# print(f"'email' in student: {'email' in student}")
-
-# print()
+# ============================================================
+# Task 10 — Mutable and Immutable Objects
+# ============================================================
+
+print("Task 10 — Mutable and Immutable Objects")
+
+# List example — mutable
+
+numbers: List[int] = [10, 20, 30]
+same_numbers: List[int] = numbers
+
+# TODO:
+# Change the first item in numbers to 99.
+#
+# Then print both:
+#
+# numbers
+# same_numbers
+#
+# Observe what happened.
+numbers[0] = 99
+
+print(f"numbers: {numbers}")
+print(f"same_numbers: {same_numbers}")
+# Observation: Both variables show [99, 20, 30] because lists are mutable and both variables reference the same object in memory.
+
+# String example — immutable
+
+text: str = "Python"
+same_text: str = text
+
+# TODO:
+# Create a new string by adding " Course" to text.
+#
+# Then print:
+#
+# text
+# same_text
+#
+# Compare this result with the list example.
+text: str = text + " Course"
+
+print(f"text: {text}")
+print(f"same_text: {same_text}")
+# Observation: 'text' is now "Python Course", but 'same_text' remains "Python". Strings are immutable, so concatenation creates a new object.
+
+print()
+
+
+# ============================================================
+# Task 11 — Small Statistics Report
+# ============================================================
+
+print("Task 11 — Small Statistics Report")
+
+scores: List[int] = [78, 92, 85, 69, 88]
+
+# TODO:
+# Calculate:
+#
+# number of scores
+# minimum score
+# maximum score
+# total score
+# mean score
+#
+# Use built-in functions.
+
+score_count: int = len(scores)
+minimum_score: int = min(scores)
+maximum_score: int = max(scores)
+total_score: int = sum(scores)
+mean_score: float = sum(scores) / len(scores)
+
+# TODO:
+# Print a clean report:
+#
+# Number of scores: 5
+# Minimum: 69
+# Maximum: 92
+# Mean: 82.40
+#
+# Format the mean to exactly two decimal places.
+print(f"Number of scores: {score_count}")
+print(f"Minimum: {minimum_score}")
+print(f"Maximum: {maximum_score}")
+print(f"Mean: {mean_score:.2f}")
+
+print()
+
+
+# ============================================================
+# Task 12 — PEP 8 Cleanup
+# ============================================================
+
+print("Task 12 — PEP 8 Cleanup")
+
+# The following code works, but it is difficult to read.
+#
+# TODO:
+# Rewrite it using:
+#
+# meaningful variable names
+# snake_case
+# spaces around operators
+# intermediate variables
+# formatted output
+#
+# Keep the same calculation.
+
+price: int = 1250
+quantity: int = 3
+discount_percent: int = 10
+
+total_cost: int = price * quantity
+final_amount: float = total_cost - (discount_percent / 100) * total_cost
+
+print(f"Final: {final_amount}")
+
+
+print()
+
+
+# ============================================================
+# Optional Challenge — Student Score Summary
+# ============================================================
+
+print("Optional Challenge — Student Score Summary")
+
+# Create a small program using only concepts from Sections 1–2.
+#
+# Ask the user for:
+#
+# student name
+# three test scores
+#
+# Store the three scores in a list.
+#
+# Calculate:
+#
+# minimum score
+# maximum score
+# mean score
+#
+# Print a clean summary similar to:
+#
+# Student: Anna
+# Scores: [78.0, 85.0, 91.0]
+# Minimum: 78.00
+# Maximum: 91.00
+# Mean: 84.67
+#
+# Use:
+# input()
+# float()
+# list
+# min()
+# max()
+# sum()
+# len()
+# f-strings
+
+student_name_input: str = input("Enter student name: ")
+score1: float = float(input("Enter first test score: "))
+score2: float = float(input("Enter second test score: "))
+score3: float = float(input("Enter third test score: "))
+
+scores_list: List[float] = [score1, score2, score3]
+
+min_score: float = min(scores_list)
+max_score: float = max(scores_list)
+mean_score_challenge: float = sum(scores_list) / len(scores_list)
+
+print(f"Student: {student_name_input}")
+print(f"Scores: {scores_list}")
+print(f"Minimum: {min_score:.2f}")
+print(f"Maximum: {max_score:.2f}")
+print(f"Mean: {mean_score_challenge:.2f}")
+
+
+# ============================================================
+# Task 13 — Multiple Assignment
+# ============================================================
+
+print("Task 13 — Multiple Assignment")
+
+# TODO:
+# Assign these three values using ONE statement:
+#
+# x = 10
+# y = 20
+# z = 30
+
+x: int
+y: int
+z: int
+x, y, z = 10, 20, 30
+
+# TODO:
+# Print x, y, and z.
+print(f"x: {x}, y: {y}, z: {z}")
+
+# TODO:
+# Swap a and b using one Python statement.
+
+a: int
+b: int
+a, b = 5, 10
+a, b = b, a  # Swapping in one statement
+
+# Expected after swapping:
+# a = 10
+# b = 5
+print(f"After swapping -> a: {a}, b: {b}")
+
+print()
+
+
+
+# ============================================================
+# Task 14 — String Methods
+# ============================================================
+
+print("Task 14 — String Methods")
+
+text: str = "  Python Programming Course  "
+
+# TODO:
+# Print the text:
+#
+# 1. without surrounding spaces
+# 2. in lowercase
+# 3. in uppercase
+# 4. with "Course" replaced by "Lab"
+print(f"1. Without surrounding spaces: '{text.strip()}'")
+print(f"2. Lowercase: {text.lower()}")
+print(f"3. Uppercase: {text.upper()}")
+print(f"4. Replaced: {text.replace('Course', 'Lab')}")
+
+# TODO:
+# Check and print whether the cleaned text:
+#
+# starts with "Python"
+# ends with "Course"
+#
+# Use:
+# strip()
+# lower()
+# upper()
+# replace()
+# startswith()
+# endswith()
+cleaned_text: str = text.strip()
+print(f"Starts with 'Python': {cleaned_text.startswith('Python')}")
+print(f"Ends with 'Course': {cleaned_text.endswith('Course')}")
+
+print()
+
+# ============================================================
+# Task 15 — Boolean Expressions
+# ============================================================
+
+print("Task 15 — Boolean Expressions")
+
+age: int = 22
+score: int = 85
+is_master_student: bool = True
+
+# TODO:
+# Print the result of:
+
+# age >= 18
+# score >= 60
+# score >= 60 and is_master_student
+# score < 60 or age < 18
+# not is_master_student
+print(f"age >= 18: {age >= 18}")
+print(f"score >= 60: {score >= 60}")
+print(f"score >= 60 and is_master_student: {score >= 60 and is_master_student}")
+print(f"score < 60 or age < 18: {score < 60 or age < 18}")
+print(f"not is_master_student: {not is_master_student}")
+
+# TODO:
+# Predict and then print:
+
+# bool(0)
+# bool(1)
+# bool("")
+# bool("Python")
+# bool([])
+# bool([1, 2])
+print(f"bool(0): {bool(0)}")
+print(f"bool(1): {bool(1)}")
+print(f'bool(""): {bool("")}')
+print(f'bool("Python"): {bool("Python")}')
+print(f"bool([]): {bool([])}")
+print(f"bool([1, 2]): {bool([1, 2])}")
+
+
+print()
+
+# ============================================================
+# Task 16 — Membership
+# ============================================================
+
+print("Task 16 — Membership")
+
+numbers: List[int] = [10, 20, 30]
+text: str = "Python Programming"
+student: Dict[str, Any] = {
+    "name": "Anna",
+    "age": 22,
+}
+
+# TODO:
+# Print the result of:
+
+# 20 in numbers
+# 50 not in numbers
+# "Python" in text
+# "Java" not in text
+# "age" in student
+# "email" in student
+print(f"20 in numbers: {20 in numbers}")
+print(f"50 not in numbers: {50 not in numbers}")
+print(f"'Python' in text: {'Python' in text}")
+print(f"'Java' not in text: {'Java' not in text}")
+print(f"'age' in student: {'age' in student}")
+print(f"'email' in student: {'email' in student}")
+
+print()
